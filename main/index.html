@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .nav a{
+            position: relative;
+        }
+        .nav a::after{
+            content: '';
+    width: 0;
+    height: 3px;
+    background: #c249b6;
+    position: absolute;
+    left: 0;
+    bottom:  16px;
+    transition: 0.5s;
+        }
+        .nav a:hover::after{
+            width: 100%;
+        }
+    </style>
 </head>
 <body class="">
     <div>
@@ -16,10 +34,10 @@
                             <a href="#"class="font-sans cursor-pointer text-base font-black text-slate-50">logo auignite</a>
                             <a href="#"class="font-sans cursor-pointer text-base font-black text-slate-50">logo ambuja</a>
                         </div>
-                        <div class="list-none flex align-middle gap-5 pt-6 pr-20">
-                            <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50 after:content-none after:w-0 after:h-1 after:bg-black after:absolute after:left-0 hover:after:w-full">Home</li></a>
+                        <div class="nav list-none flex align-middle gap-5 pt-6 pr-20">
+                            <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50 ">Home</li></a>
                             <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50">About</li></a>
-                            <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50">Quzi</li></a>
+                            <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50">Quiz</li></a>
                             <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50">Login</li></a>
                             <a href="#"><li class="font-sans text-base font-black cursor-pointer text-slate-50">Signup</li></a>
                         </div>
